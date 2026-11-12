@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Accepted | AI as stand-in for S01 | S01 | Review of ADR-0001; autonomous, not independent | pending |
+| 2026-11-12 | Accepted | AI as stand-in for S01 | S01 | Review of ADR-0001; autonomous, not independent | [bf3ce71] |
 
 ---
 
@@ -54,3 +54,4 @@ Go — every Mandatory criterion passes or is not applicable.
 
 [ADR-0001]: ../../adr/adr-0001-pandas-in-infrastructure.md
 [QC-ADR-001]: ../../../framework/qc/artifacts/qc-adr.md
+[bf3ce71]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data/commit/bf3ce714e24d61809c86c05b232940c70b0bd70d

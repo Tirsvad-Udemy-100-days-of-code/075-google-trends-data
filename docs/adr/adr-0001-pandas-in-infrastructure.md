@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version; Go in RC-008 (autonomous, not independent) | pending |
+| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version; Go in RC-008 (autonomous, not independent) | [bf3ce71] |
 
 Allowed Status values: `Proposed`, `Accepted`, `Rejected`, `Deprecated`, `Superseded by ADR-NNNN`.
 
@@ -49,3 +49,4 @@ Use pandas, because the lecture requires it, and confine it to the infrastructur
 ---
 
 [BC-001]: ../business-case.md
+[bf3ce71]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data/commit/bf3ce714e24d61809c86c05b232940c70b0bd70d
