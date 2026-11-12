@@ -11,3 +11,7 @@ class PeriodicityError(DataError):
 
 class DateConversionRequiredError(DataError):
     """The date column must be converted to datetime first."""
+
+
+class UnknownChartStepError(DataError):
+    """No chart exists for the requested lecture step."""

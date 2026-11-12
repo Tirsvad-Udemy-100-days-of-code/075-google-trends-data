@@ -5,6 +5,7 @@ from pathlib import Path
 
 import pandas as pd
 
+from google_trends_data.domain.charts import TimeSeries
 from google_trends_data.domain.datasets import (
     DATE_COLUMN,
     PERIODICITY,
@@ -122,4 +123,27 @@ class PandasDatasetGateway:
             rows=monthly.shape[0],
             first_month=monthly.index.min().date(),
             last_month=monthly.index.max().date(),
+        )
+
+    def series(
+        self,
+        name: DatasetName,
+        column: str,
+        *,
+        monthly: bool = False,
+        rolling_window: int | None = None,
+    ) -> TimeSeries:
+        """Return a column as a time series, optionally monthly or rolling mean."""
+        if monthly:
+            frame = self.monthly_frame(name)
+            dates = pd.DatetimeIndex(frame.index)
+        else:
+            frame = self.frame(name)
+            dates = pd.DatetimeIndex(pd.to_datetime(frame[DATE_COLUMN[name]]))
+        values = frame[column].astype("float64")
+        if rolling_window is not None:
+            values = values.rolling(window=rolling_window).mean()
+        return TimeSeries(
+            dates=tuple(stamp.date() for stamp in dates),
+            values=tuple(float(value) for value in values),
         )
