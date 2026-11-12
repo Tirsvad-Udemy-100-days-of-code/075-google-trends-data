@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-013 (wiki review) | [9f3d01a] |
-| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-014 (MIL-004 code review) | [9f3d01a] |
+| 2026-11-12 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-014 (MIL-004 code review) | [9f3d01a] |
+| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-015 (published wiki checked) | pending |
 
 ---
 
@@ -30,7 +30,7 @@ updated whenever an artifact instance is created or reviewed.
 | [MIL-001] | MIL | en | it | [BC-001], [PP-001] | [ADR-0001] | [RC-004], [RC-009] |
 | [MIL-002] | MIL | en | it | [BC-001], [PP-001] | - | [RC-005], [RC-010] |
 | [MIL-003] | MIL | en | it | [BC-001], [PP-001] | - | [RC-006], [RC-011] |
-| [MIL-004] | MIL | en | it | [BC-001], [PP-001] | - | [RC-007], [RC-012], [RC-013], [RC-014] |
+| [MIL-004] | MIL | en | it | [BC-001], [PP-001] | - | [RC-007], [RC-012], [RC-013], [RC-014], [RC-015] |
 | [ADR-0001] | ADR | - | - | [BC-001] | [MIL-001] | [RC-008] |
 
 ## Concern Coverage
@@ -80,3 +80,4 @@ No views, ADRs or test plans exist yet, so concerns are `Gap` until MIL-002 to M
 [RC-013]: ./reviews/rc-013-wiki.md
 [RC-014]: ./reviews/rc-014-mil-004-code.md
 [9f3d01a]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data/commit/9f3d01a24a1a649e8b2d62518ae24f589cd61731
+[RC-015]: ./reviews/rc-015-wiki-published.md
