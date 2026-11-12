@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-12 | Proposed | AI as stand-in for S01 | S01 | Review of the published wiki; autonomous, not independent | [7cadbcb] |
-| 2026-11-12 | Accepted | AI as stand-in for S01 | S01 | S01 accepted the wiki pages in chat; conditions closed | pending |
+| 2026-11-12 | Accepted | AI as stand-in for S01 | S01 | S01 accepted the wiki pages in chat; conditions closed | [86b18ed] |
 
 ---
 
@@ -46,3 +46,4 @@ Go — S01 accepted the wiki pages in English, Danish and Bahasa Malaysia in cha
 [MIL-004]: ../../milestones/mil-004-docs-and-wiki.md
 [QC-WIKI-001]: ../../../framework/qc/artifacts/qc-wiki.md
 [7cadbcb]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data/commit/7cadbcbf536d589aec461aaab5af8b236ba599df
+[86b18ed]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data/commit/86b18edce4c6d07419983f1c6bd0b982dfb47379
