@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-12 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-010 (MIL-002 code review) | [4705577] |
-| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-011 (MIL-003 code review) | pending |
+| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-011 (MIL-003 code review) | [04ef146] |
 
 ---
 
@@ -77,3 +77,4 @@ No views, ADRs or test plans exist yet, so concerns are `Gap` until MIL-002 to M
 [RC-010]: ./reviews/rc-010-mil-002-code.md
 [4705577]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data/commit/4705577b31baf11d1a1967c364eb8f3f3e5c0b28
 [RC-011]: ./reviews/rc-011-mil-003-code.md
+[04ef146]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data/commit/04ef1466c5b74feb459f58208bc780e8941792ff
