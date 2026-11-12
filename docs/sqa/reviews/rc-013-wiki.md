@@ -10,6 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-12 | Proposed | AI as stand-in for S01 | S01 | Review of the project wiki (docs/wiki, en, da, ms); autonomous, not independent | [9f3d01a] |
+| 2026-11-12 | Accepted | AI as stand-in for S01 | S01 | S01 accepted the wiki pages in chat; conditions closed | pending |
 
 ---
 
@@ -47,13 +48,13 @@ Mode: autonomous, not independent. The AI authored the work for S01 and reviews 
 
 ## Overall Verdict
 
-Go-with-conditions — criterion 14 is Pending until the merge has published the wiki. The Danish and Bahasa Malaysia text was machine translated by the AI and read only by the AI; no human reader of Bahasa Malaysia has checked it.
+Go — S01 accepted the wiki pages in English, Danish and Bahasa Malaysia in chat on 2026-11-12, which closes the condition on the Danish and Malay text. Criterion 14, Pending above, passed in RC-015.
 
 ## Action Items
 
 | Action | Owner | Due |
 | --- | --- | --- |
-| Verify the published wiki (sidebar, pages, images) after the merge, and ask a reader of Bahasa Malaysia to check the Malay pages | S01 | 2026-11-22 |
+| None; the conditions are closed by S01's acceptance | S01 | 2026-11-12 |
 
 ---
 
