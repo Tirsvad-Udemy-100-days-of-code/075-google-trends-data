@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-trends-data"
+version = "0.1.0"
+description = "Day 75 of 100 Days of Code: combine Google Trends data with Tesla, Bitcoin and unemployment time series."
+readme = "README.md"
+requires-python = ">=3.13"
+license = "AGPL-3.0-or-later"
+dependencies = [
+    "pandas>=2.2",
+    "matplotlib>=3.9",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "ruff>=0.6",
+    "mypy>=1.11",
+    "pandas-stubs",
+    "jupyter>=1.1",
+    "nbconvert>=7.16",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+filterwarnings = ["error"]
+
+[tool.ruff]
+line-length = 88
+src = ["src", "tests"]
+extend-exclude = ["framework", ".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "N"]
+
+[tool.mypy]
+strict = true
+mypy_path = "src"
