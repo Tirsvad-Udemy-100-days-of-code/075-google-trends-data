@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version; Go in RC-003 (autonomous, not independent) | pending |
+| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version; Go in RC-003 (autonomous, not independent) | [bc4fe74] |
 
 ---
 
@@ -87,3 +87,4 @@ A No-Go on a phase moves every later gateway and the end date by the rework time
 [MIL-002]: ./milestones/mil-002-data-preparation.md
 [MIL-003]: ./milestones/mil-003-charts.md
 [MIL-004]: ./milestones/mil-004-docs-and-wiki.md
+[bc4fe74]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data/commit/bc4fe74dfe75aeeeb4608c64d8dc3ec0b2f17d10

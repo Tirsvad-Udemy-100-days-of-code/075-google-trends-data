@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [bc4fe74] |
 
 ---
 
@@ -69,3 +69,4 @@ No views, ADRs or test plans exist yet, so concerns are `Gap` until MIL-002 to M
 [RC-005]: ./reviews/rc-005-mil-002-data-preparation.md
 [RC-006]: ./reviews/rc-006-mil-003-charts.md
 [RC-007]: ./reviews/rc-007-mil-004-docs-and-wiki.md
+[bc4fe74]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data/commit/bc4fe74dfe75aeeeb4608c64d8dc3ec0b2f17d10
