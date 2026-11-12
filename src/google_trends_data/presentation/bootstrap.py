@@ -2,11 +2,18 @@
 
 from pathlib import Path
 
-from google_trends_data.application.ports import ChartRenderer, LectureData
+from google_trends_data.application.ports import (
+    ChartRenderer,
+    LectureData,
+    TextImageRenderer,
+)
 from google_trends_data.infrastructure.matplotlib_renderer import (
     MatplotlibChartRenderer,
 )
 from google_trends_data.infrastructure.pandas_gateway import PandasDatasetGateway
+from google_trends_data.infrastructure.text_image_renderer import (
+    MatplotlibTextImageRenderer,
+)
 
 DEFAULT_DATA_DIR = Path(__file__).resolve().parents[3] / "data"
 
@@ -19,3 +26,8 @@ def load_data(data_dir: Path | None = None) -> LectureData:
 def create_renderer() -> ChartRenderer:
     """Create the renderer that draws charts with matplotlib."""
     return MatplotlibChartRenderer()
+
+
+def create_text_renderer() -> TextImageRenderer:
+    """Create the renderer that draws lines of text as a PNG."""
+    return MatplotlibTextImageRenderer()
