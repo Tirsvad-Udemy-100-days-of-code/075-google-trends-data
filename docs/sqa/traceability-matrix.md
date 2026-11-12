@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-12 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added ADR-0001, RC-008 and RC-009 (MIL-001) | [bf3ce71] |
-| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-010 (MIL-002 code review) | pending |
+| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-010 (MIL-002 code review) | [4705577] |
 
 ---
 
@@ -76,3 +76,4 @@ No views, ADRs or test plans exist yet, so concerns are `Gap` until MIL-002 to M
 [ADR-0001]: ../adr/adr-0001-pandas-in-infrastructure.md
 [bf3ce71]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data/commit/bf3ce714e24d61809c86c05b232940c70b0bd70d
 [RC-010]: ./reviews/rc-010-mil-002-code.md
+[4705577]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data/commit/4705577b31baf11d1a1967c364eb8f3f3e5c0b28
