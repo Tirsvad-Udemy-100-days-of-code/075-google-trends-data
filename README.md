@@ -66,7 +66,7 @@ with `python -m pip install -e .`.
 Start Jupyter and open the notebook:
 
 ```bash
-jupyter notebook notebooks/google_trends.ipynb
+jupyter lab notebooks/google_trends.ipynb
 ```
 
 Use the functions from Python:
@@ -91,6 +91,54 @@ The code is layered (`domain`, `application`, `infrastructure`,
 [ADR-0001](./docs/adr/adr-0001-pandas-in-infrastructure.md)). The CSV files
 in `data/` have snake_case names: for example the lecture file
 `TESLA Search Trend vs Price.csv` is `tesla_search_trend_vs_price.csv`.
+
+### Lecture steps and screenshots
+
+Create every screenshot with `python -m google_trends_data.presentation.screenshots`. The wiki ([English][wiki], Danish and Bahasa Malaysia) explains what each step teaches.
+
+**Step 1: Data exploration**: Shape, columns, min and max, and the periodicity of each dataset.
+
+![Step 1: Data exploration](./docs/images/step-1-exploration.png)
+
+**Step 2: Missing values**: `isna()` finds 2 missing Bitcoin prices in one row; `dropna()` removes it.
+
+![Step 2: Missing values](./docs/images/step-2-missing-values.png)
+
+**Step 3: Datetime and resampling**: `to_datetime`, then daily prices become 73 monthly rows with `resample`.
+
+![Step 3: Datetime and resampling](./docs/images/step-3-datetime-resample.png)
+
+**Step 4: Tesla basic chart**: Two y axes with `twinx()`.
+
+![Step 4: Tesla basic chart](./docs/images/tesla-1-basic.png)
+
+**Step 5: Colours**: A HEX colour and a named colour.
+
+![Step 5: Colours](./docs/images/tesla-2-colours.png)
+
+**Step 6: Size and style**: Figure size, dpi, fonts, rotation, line width and limits.
+
+![Step 6: Size and style](./docs/images/tesla-3-styled.png)
+
+**Step 7: Time axis locators**: Year and month ticks with `matplotlib.dates`.
+
+![Step 7: Time axis locators](./docs/images/tesla-4-locators.png)
+
+**Step 8: Bitcoin**: Dashed line and circle markers on the resampled price.
+
+![Step 8: Bitcoin](./docs/images/bitcoin.png)
+
+**Step 9: Unemployment and the grid**: A grey dashed grid shows seasonality.
+
+![Step 9: Unemployment and the grid](./docs/images/unemployment-grid.png)
+
+**Step 10: Rolling average**: A 6-month rolling mean: searches lead the rate.
+
+![Step 10: Rolling average](./docs/images/unemployment-rolling.png)
+
+**Step 11: Including 2020**: The pandemic spike dwarfs 2008.
+
+![Step 11: Including 2020](./docs/images/unemployment-2020.png)
 
 ## 🧪 Tests
 
@@ -137,6 +185,7 @@ The documents a newcomer needs, in reading order.
 
 [repository]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data
 [documentation]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data/wiki
+[wiki]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data/wiki
 [issues]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data/issues
 [agents]: ./AGENTS.md
 [BC-001]: ./docs/business-case.md

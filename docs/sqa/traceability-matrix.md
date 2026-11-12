@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-010 (MIL-002 code review) | [4705577] |
-| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-011 (MIL-003 code review) | [04ef146] |
+| 2026-11-12 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-013 (wiki review) | [9f3d01a] |
+| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-014 (MIL-004 code review) | [9f3d01a] |
 
 ---
 
@@ -30,7 +30,7 @@ updated whenever an artifact instance is created or reviewed.
 | [MIL-001] | MIL | en | it | [BC-001], [PP-001] | [ADR-0001] | [RC-004], [RC-009] |
 | [MIL-002] | MIL | en | it | [BC-001], [PP-001] | - | [RC-005], [RC-010] |
 | [MIL-003] | MIL | en | it | [BC-001], [PP-001] | - | [RC-006], [RC-011] |
-| [MIL-004] | MIL | en | it | [BC-001], [PP-001] | - | [RC-007] |
+| [MIL-004] | MIL | en | it | [BC-001], [PP-001] | - | [RC-007], [RC-012], [RC-013], [RC-014] |
 | [ADR-0001] | ADR | - | - | [BC-001] | [MIL-001] | [RC-008] |
 
 ## Concern Coverage
@@ -75,6 +75,8 @@ No views, ADRs or test plans exist yet, so concerns are `Gap` until MIL-002 to M
 [RC-009]: ./reviews/rc-009-mil-001-code.md
 [ADR-0001]: ../adr/adr-0001-pandas-in-infrastructure.md
 [RC-010]: ./reviews/rc-010-mil-002-code.md
-[4705577]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data/commit/4705577b31baf11d1a1967c364eb8f3f3e5c0b28
 [RC-011]: ./reviews/rc-011-mil-003-code.md
-[04ef146]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data/commit/04ef1466c5b74feb459f58208bc780e8941792ff
+[RC-012]: ./reviews/rc-012-mil-004-delta.md
+[RC-013]: ./reviews/rc-013-wiki.md
+[RC-014]: ./reviews/rc-014-mil-004-code.md
+[9f3d01a]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data/commit/9f3d01a24a1a649e8b2d62518ae24f589cd61731

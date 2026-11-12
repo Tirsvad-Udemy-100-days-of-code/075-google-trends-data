@@ -1,5 +1,6 @@
 """Ports: what the use cases need from the outside world."""
 
+from collections.abc import Sequence
 from pathlib import Path
 from typing import Protocol
 
@@ -59,6 +60,14 @@ class ChartRenderer(Protocol):
 
     def render(self, spec: ChartSpec, output: Path | None = None) -> None:
         """Save the chart to `output` when given, otherwise show it."""
+        ...
+
+
+class TextImageRenderer(Protocol):
+    """Draws lines of text as an image."""
+
+    def render(self, title: str, lines: Sequence[str], output: Path) -> None:
+        """Save the title and the lines, in monospace, as an image at `output`."""
         ...
 
 
