@@ -1,7 +1,9 @@
 """Ports: what the use cases need from the outside world."""
 
+from pathlib import Path
 from typing import Protocol
 
+from google_trends_data.domain.charts import ChartSpec, TimeSeries
 from google_trends_data.domain.datasets import (
     CleaningResult,
     DatasetName,
@@ -34,3 +36,31 @@ class DatasetGateway(Protocol):
     def resample_monthly(self, name: DatasetName) -> ResampleResult:
         """Make a monthly series (last value of the month) from a daily one."""
         ...
+
+
+class SeriesSource(Protocol):
+    """Gives one column of a prepared dataset as a plain time series."""
+
+    def series(
+        self,
+        name: DatasetName,
+        column: str,
+        *,
+        monthly: bool = False,
+        rolling_window: int | None = None,
+    ) -> TimeSeries:
+        """Return the column; `monthly` reads the resampled data, and
+        `rolling_window` replaces each value by the mean of that many months."""
+        ...
+
+
+class ChartRenderer(Protocol):
+    """Draws a chart description."""
+
+    def render(self, spec: ChartSpec, output: Path | None = None) -> None:
+        """Save the chart to `output` when given, otherwise show it."""
+        ...
+
+
+class LectureData(DatasetGateway, SeriesSource, Protocol):
+    """Everything the lecture needs from the data: preparation and series."""

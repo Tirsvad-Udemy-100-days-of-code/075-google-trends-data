@@ -1,7 +1,13 @@
 """The lecture steps for data exploration and cleaning, as plain functions."""
 
-from google_trends_data.application import use_cases
-from google_trends_data.application.ports import DatasetGateway
+from pathlib import Path
+
+from google_trends_data.application import chart_specs, use_cases
+from google_trends_data.application.ports import (
+    ChartRenderer,
+    DatasetGateway,
+    SeriesSource,
+)
 from google_trends_data.domain.datasets import (
     CleaningResult,
     DatasetName,
@@ -37,6 +43,21 @@ def resample_monthly(
 ) -> ResampleResult:
     """Step Converting from Daily to Monthly Data."""
     return use_cases.resample_to_monthly(gateway, name)
+
+
+def prepare_data(gateway: DatasetGateway) -> None:
+    """Steps Remove Missing Values to Resampling for every dataset."""
+    chart_specs.prepare_datasets(gateway)
+
+
+def draw_chart(
+    gateway: SeriesSource,
+    renderer: ChartRenderer,
+    step: str,
+    output: Path | None = None,
+) -> None:
+    """Draw the chart of a lecture step; save it to `output` or show it."""
+    renderer.render(chart_specs.build_chart(gateway, step), output)
 
 
 def format_summary(summary: DatasetSummary) -> str:

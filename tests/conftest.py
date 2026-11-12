@@ -1,8 +1,13 @@
 from pathlib import Path
 
+import matplotlib
 import pytest
 
-from google_trends_data.infrastructure.pandas_gateway import PandasDatasetGateway
+matplotlib.use("Agg", force=True)
+
+from google_trends_data.infrastructure.pandas_gateway import (  # noqa: E402
+    PandasDatasetGateway,
+)
 
 
 @pytest.fixture
