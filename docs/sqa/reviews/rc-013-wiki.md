@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Proposed | AI as stand-in for S01 | S01 | Review of the project wiki (docs/wiki, en, da, ms); autonomous, not independent | pending |
+| 2026-11-12 | Proposed | AI as stand-in for S01 | S01 | Review of the project wiki (docs/wiki, en, da, ms); autonomous, not independent | [9f3d01a] |
 
 ---
 
@@ -59,3 +59,4 @@ Go-with-conditions — criterion 14 is Pending until the merge has published the
 
 [MIL-004]: ../../milestones/mil-004-docs-and-wiki.md
 [QC-WIKI-001]: ../../../framework/qc/artifacts/qc-wiki.md
+[9f3d01a]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data/commit/9f3d01a24a1a649e8b2d62518ae24f589cd61731

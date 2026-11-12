@@ -12,7 +12,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-12 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version; Go in RC-007 (autonomous, not independent) | [bc4fe74] |
-| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Wiki scope: Getting-Started page with Windows and Linux/macOS guides, publishing by the scoped workflow; Go in RC-012 (autonomous, not independent) | pending |
+| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Wiki scope: Getting-Started page with Windows and Linux/macOS guides, publishing by the scoped workflow; Go in RC-012 (autonomous, not independent) | [9f3d01a] |
 
 ---
 
@@ -76,3 +76,4 @@ Decide whether the project is ready to share: the Jupyter notebook runs, the REA
 
 [BC-001]: ../business-case.md
 [bc4fe74]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data/commit/bc4fe74dfe75aeeeb4608c64d8dc3ec0b2f17d10
+[9f3d01a]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data/commit/9f3d01a24a1a649e8b2d62518ae24f589cd61731

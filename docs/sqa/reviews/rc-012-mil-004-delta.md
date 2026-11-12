@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Accepted | AI as stand-in for S01 | S01 | Review of MIL-004 after the wiki scope change; autonomous, not independent | pending |
+| 2026-11-12 | Accepted | AI as stand-in for S01 | S01 | Review of MIL-004 after the wiki scope change; autonomous, not independent | [9f3d01a] |
 
 ---
 
@@ -49,3 +49,4 @@ Go — every Mandatory criterion passes or is not applicable.
 
 [MIL-004]: ../../milestones/mil-004-docs-and-wiki.md
 [QC-MIL-001]: ../../../framework/qc/artifacts/qc-milestones-gateways.md
+[9f3d01a]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/075-google-trends-data/commit/9f3d01a24a1a649e8b2d62518ae24f589cd61731
