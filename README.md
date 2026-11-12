@@ -72,9 +72,25 @@ jupyter notebook notebooks/google_trends.ipynb
 Use the functions from Python:
 
 ```python
-from google_trends_data import __version__
-print(__version__)
+from google_trends_data.domain.datasets import DatasetName
+from google_trends_data.presentation import (
+    convert_dates, count_missing, describe_data, drop_missing,
+    format_summary, load_data, resample_monthly,
+)
+
+gateway = load_data()                                  # reads data/*.csv
+print(format_summary(describe_data(gateway, DatasetName.TESLA)))
+print(count_missing(gateway, DatasetName.BTC_PRICE))   # 2 missing values
+drop_missing(gateway, DatasetName.BTC_PRICE)
+convert_dates(gateway, DatasetName.BTC_PRICE)
+print(resample_monthly(gateway))                       # 73 monthly rows
 ```
+
+The code is layered (`domain`, `application`, `infrastructure`,
+`presentation`); pandas is used only in `infrastructure` (see
+[ADR-0001](./docs/adr/adr-0001-pandas-in-infrastructure.md)). The CSV files
+in `data/` have snake_case names: for example the lecture file
+`TESLA Search Trend vs Price.csv` is `tesla_search_trend_vs_price.csv`.
 
 ## 🧪 Tests
 
