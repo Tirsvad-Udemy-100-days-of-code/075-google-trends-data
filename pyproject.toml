@@ -20,6 +20,7 @@ dev = [
     "ruff>=0.6",
     "mypy>=1.11",
     "pandas-stubs",
+    "import-linter>=2",
     "jupyter>=1.1",
     "nbconvert>=7.16",
 ]
@@ -43,3 +44,23 @@ select = ["E", "F", "I", "B", "UP", "N"]
 [tool.mypy]
 strict = true
 mypy_path = "src"
+
+[tool.importlinter]
+root_package = "google_trends_data"
+include_external_packages = true
+
+[[tool.importlinter.contracts]]
+name = "Layers point inward"
+type = "layers"
+layers = [
+    "google_trends_data.presentation",
+    "google_trends_data.infrastructure",
+    "google_trends_data.application",
+    "google_trends_data.domain",
+]
+
+[[tool.importlinter.contracts]]
+name = "Domain and application use no dataframe or plotting library"
+type = "forbidden"
+source_modules = ["google_trends_data.domain", "google_trends_data.application"]
+forbidden_modules = ["pandas", "matplotlib"]
